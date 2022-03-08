@@ -6,4 +6,5 @@
 | :--: | :--: |
 | git-exercise/ | Git |
 | entity-relationship-diagram/ | 設計 |
-| sql_exercise/ | SQL・RDB・ETL |
+| sql/ | SQL基礎・応用 |
+| ETL/ | ETL |

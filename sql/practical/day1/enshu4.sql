@@ -1,0 +1,1 @@
+select u.id, name, SUM(impressions) from users u     left join activity_reports  a_r on u.id = a_r.user_id group by u.id,name;
