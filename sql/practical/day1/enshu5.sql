@@ -11,7 +11,7 @@ WITH follows_count AS (
 
 SELECT 
     concat(age_group * 10, '代') AS age_group,
-    AVG(count) as avg_count 
+    AVG(count) AS avg_count 
 FROM 
     follows_count
 GROUP BY 
