@@ -5,7 +5,7 @@ WITH follows_count AS (
     FROM 
         users AS u 
         LEFT JOIN follows AS f 
-        ON u.id = f.follower_id 
+          ON u.id = f.follower_id 
         GROUP BY u.id
 )
 
