@@ -1,1 +1,11 @@
-select u.id, name, SUM(impressions) from users u     left join activity_reports  a_r on u.id = a_r.user_id group by u.id,name;
+SELECT 
+    u.id, 
+    name, 
+    SUM(impressions) AS impressions_total 
+FROM users AS u
+    LEFT JOIN activity_reports AS a_r 
+    ON u.id = a_r.user_id 
+GROUP BY 
+      u.id,
+      name
+;
