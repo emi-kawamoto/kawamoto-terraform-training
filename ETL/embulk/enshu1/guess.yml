@@ -1,0 +1,11 @@
+in:
+  type: file
+  path_prefix: "/Users/r_oshima/submit-exercises-May/ETL/embulk/enshu1/input_data_1.csv"
+out:
+  type: bigquery
+  auth_method: json_key
+  json_keyfile: /Users/r_oshima/submit-exercise-etl/etl-training/etl-training_json_keyfile.json
+  dataset: cn_r_oshima
+  auto_create_dataset: true
+  auto_create_table: true
+  table: chapter2_section2_1
