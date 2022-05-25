@@ -34,19 +34,7 @@ SQL基礎で使用した, `shop` データベースの `Shohin`　テーブル�
 </details>
 
 ```sql
-SELECT
-    shohin_id,
-    shohin_mei,
-    shohin_bunrui,
-    count(shohin_mei) OVER(
-      PARTITION BY shohin_mei
-    ) AS shohin_count,
-    count(shohin_bunrui) OVER(
-      PARTITION BY shohin_bunrui
-    ) AS bunrui_count
-FROM `Shohin`
-ORDER BY shohin_id
-;
+ここに回答を書きます
 ```
 
 ----
@@ -117,27 +105,7 @@ VALUES
 </details>
 
 ```sql
-SELECT
-    name,
-    date,
-    post_id,
-    impressions AS imp,
-    SUM(impressions) OVER(
-      PARTITION BY name
-      ORDER BY date
-    ) AS imp_sum,
-    clicks,
-    SUM(clicks) OVER (
-      PARTITION BY name
-      ORDER BY date
-    ) AS click_sum
-FROM 
-    users AS u 
-    INNER JOIN activity_reports AS a_r
-      ON u.id = a_r.user_id 
-WHERE
-    name in ("タヌキ", "ウサギ")
-;
+ここに回答を書きます
 ```
 ----
 ## 3. MIN/MAX()
@@ -210,38 +178,7 @@ VALUES
 </details>
 
 ```sql
-WITH count_click AS(
-    SELECT 
-        name,
-        date,
-        clicks,
-        MIN(clicks) OVER(
-          PARTITION BY name
-          ORDER BY date
-          ROWS BETWEEN 3 PRECEDING AND CURRENT ROW
-        ) AS click_min_past_3days,
-        MAX(clicks) OVER(
-          PARTITION BY name
-          ORDER BY date
-          ROWS BETWEEN 3 PRECEDING AND CURRENT ROW
-        ) AS click_max_past_3days
-    FROM 
-        users AS u 
-        INNER JOIN activity_reports AS a_r
-          ON u.id = a_r.user_id
-)
-
-SELECT 
-    name, 
-    date, 
-    clicks, 
-    click_min_past_3days, 
-    click_max_past_3days
-FROM
-    count_click
-WHERE
-    date = "2021-10-05"
-;
+ここに回答を書きます
 ```
 
 <details>
