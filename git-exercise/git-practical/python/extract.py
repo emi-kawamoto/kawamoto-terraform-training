@@ -1,6 +1,3 @@
-from pkgutil import ImpImporter
-
-
 import os
 import urllib.request as req
 
