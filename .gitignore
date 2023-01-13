@@ -1,2 +1,5 @@
 .idea
 .DS_Store
+.ipynb_checkpoints
+python/docker/practices/day2/1_machine_learning/sample1.ipynb
+python/docker/practices/day3/1_machine_learning2/sample1.ipynb
