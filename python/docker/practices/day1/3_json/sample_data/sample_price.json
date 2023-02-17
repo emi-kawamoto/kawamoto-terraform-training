@@ -1,0 +1,11 @@
+{
+    "Apple":{
+        "price": 100
+},
+    "Orange":{
+        "price": 120
+},
+    "Grape":{
+        "price": 380
+}
+}
