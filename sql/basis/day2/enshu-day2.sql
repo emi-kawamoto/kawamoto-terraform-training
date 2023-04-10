@@ -12,7 +12,7 @@ WHERE
 -- 演習2
 
 SELECT 
-    ROUND(m, -1) 
+    ROUND(m, -1) AS m_rounded 
 FROM 
     SampleMath
 ;
