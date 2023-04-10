@@ -19,7 +19,7 @@ ORDER BY
 
 -- 演習2
 
-enshu-day3-q2.md に記載
+-- enshu-day3-q2.md に記載
 
 -- 演習3
 
@@ -31,7 +31,7 @@ SELECT
 FROM employees
 Left JOIN
     (
-        SELECT 
+        SELECT
             company_id,
             employee_id,
             COUNT(company_id) AS child_cnt
@@ -39,6 +39,6 @@ Left JOIN
             children
         GROUP BY company_id, employee_id
     ) AS child_cnts
-    ON employees.company_id = child_cnts.company_id 
+    ON employees.company_id = child_cnts.company_id
     AND employees.employee_id = child_cnts.employee_id
 ;
