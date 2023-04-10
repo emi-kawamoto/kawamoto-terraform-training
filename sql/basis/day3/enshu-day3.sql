@@ -24,11 +24,11 @@ ORDER BY
 -- 演習3
 
 SELECT
-    employees.company_id,
-    employees.employee_id,
-    employees.employee_name,
+    e.company_id,
+    e.employee_id,
+    e.employee_name,
     CASE WHEN child_cnt IS NULL THEN 0 ELSE child_cnt END AS child_cnt
-FROM employees
+FROM employees AS e
 Left JOIN
     (
         SELECT
@@ -39,6 +39,6 @@ Left JOIN
             children
         GROUP BY company_id, employee_id
     ) AS child_cnts
-    ON employees.company_id = child_cnts.company_id
-    AND employees.employee_id = child_cnts.employee_id
+    ON e.company_id = child_cnts.company_id
+    AND e.employee_id = child_cnts.employee_id
 ;
