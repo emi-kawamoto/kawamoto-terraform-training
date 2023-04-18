@@ -1,0 +1,13 @@
+.idea
+.DS_Store
+
+# Python研修で使用するファイルを変更されても差分に入らないようにする
+.ipynb_checkpoints
+python/docker/practices/day2/1_machine_learning/sample1.ipynb
+python/docker/practices/day3/1_machine_learning2/sample1.ipynb
+python/docker/practices/day4/5_object/object_oriented.ipynb
+__pycache__/
+
+# ETL研修のGCP のサービスアカウントの認証情報ファイルを除外
+etl-training_json_keyfile.json
+
