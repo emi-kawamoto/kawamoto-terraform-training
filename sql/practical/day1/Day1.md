@@ -20,7 +20,7 @@ SQL応用の課題提出用ブランチ`develop/sql-practical`を作成する
 
 ブランチ`develop/sql-practical`から、`feature/day1_enshu1`というブランチを生やして移動し、作業してください。
 
-`$ git checkout -b feature/day1_enshu1 develop/sql-practical`
+`$ git switch -c feature/day1_enshu1 develop/sql-practical`
 
 day1フォルダの中のenshu1.sqlというファイルに、作成したクエリとその結果を記述してください。
 
@@ -55,7 +55,7 @@ sql_practical
 
 ブランチ`develop/sql-practical`から、`feature/day1_enshu2`というブランチを生やして作業してください。
 
-`$ git checkout -b feature/day1_enshu2 develop/sql-practical`
+`$ git switch -c feature/day1_enshu2 develop/sql-practical`
 
 day1フォルダの中のenshu2.sqlというファイルに、作成したクエリとその結果を記述してください。
 

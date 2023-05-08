@@ -7,7 +7,7 @@
 マージリクエストを作成するまでにローカルリポジトリで行う手順を正しい番号順に並び変えてください
 
 1. コミットする（例: `git commit -m "msg"`）
-2. ブランチを切り替える（例: `git checkout <branch>`）
+2. ブランチを切り替える（例: `git switch <branch>`）
 3. プッシュする（例: `git push origin <branch>`）
 4. インデックスに追加する（例: `git add <path/file>`）
 5. ファイルを作成・変更する
