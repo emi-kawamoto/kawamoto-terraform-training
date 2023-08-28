@@ -11,3 +11,4 @@ __pycache__/
 # ETL研修のGCP のサービスアカウントの認証情報ファイルを除外
 etl-training_json_keyfile.json
 
+.digdag
