@@ -12,4 +12,4 @@ with open(
         writer = csv.writer(write_file, delimiter="\t")
         writer.writerow(["緯度", "軽度"])
         for row in reader:
-            writer.writerow([row[2], row[3]])
+            writer.writerow([row[0], row[1]])
