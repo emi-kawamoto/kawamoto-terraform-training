@@ -1,5 +1,5 @@
 name: HandsOn Browser # ①
-on: [push] # ②
+on: workflow_dispatch # ②
 jobs: # ③
   Explore-GitHub-Actions: # ④
     runs-on: ubuntu-latest # ⑤

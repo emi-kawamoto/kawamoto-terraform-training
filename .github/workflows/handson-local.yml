@@ -1,5 +1,5 @@
 name: HandsOn Local
-on: [merged]
+on: workflow_dispatch
 jobs:
   Echo-Hello-World:
     runs-on: ubuntu-latest

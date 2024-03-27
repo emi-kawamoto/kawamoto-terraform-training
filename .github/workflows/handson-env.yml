@@ -1,5 +1,5 @@
 name: Handson Env Variables
-on: push
+on: workflow_dispatch
 jobs:
   Execute-Python:
     runs-on: ubuntu-latest
