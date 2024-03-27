@@ -1,0 +1,14 @@
+name: Handson Actions
+on: push
+jobs:
+  Call-Sample-Action:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - id: calling-defined-action
+        uses: ./.github/actions/sample-action
+      - run: echo random-number ${{ steps.calling-defined-action.outputs.bar }}
+      - id: calling-defined-action-with-input-variable 
+        uses: ./.github/actions/sample-action
+        with: 
+          foo: "ワークフローからの入力"

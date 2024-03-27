@@ -1,0 +1,19 @@
+name: "Sample Action"
+description: "ハンズオンで使用するサンプルのアクション"
+inputs:
+  foo: 
+    description: "入力値"
+    required: true
+    default: "Hello"
+outputs:
+  bar:
+    description: "出力値"
+    value: ${{ steps.random-num-gen.outputs.num-output1 }}
+runs:
+  using: "composite"
+  steps: 
+    - run: echo ${{ inputs.foo }}
+      shell: bash
+    - id: random-num-gen
+      run: echo "num-output1=$(echo $RANDOM)" >> $GITHUB_OUTPUT
+      shell: bash
