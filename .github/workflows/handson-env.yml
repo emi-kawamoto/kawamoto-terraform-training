@@ -11,5 +11,5 @@ jobs:
       - name: running Python Script
         run: python python/cicd/sample.py
         env:
-          USER_NAME: "ワークフローで設定したユーザー名"
-          PASSWORD: "ワークフローで設定したパスワード"
+          USER_NAME: ${{ secrets.SecretUserName }} 
+          PASSWORD: ${{ secrets.SecretPassword }} 
