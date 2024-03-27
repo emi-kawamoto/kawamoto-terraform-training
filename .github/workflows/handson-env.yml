@@ -1,0 +1,15 @@
+name: Handson Env Variables
+on: push
+jobs:
+  Execute-Python:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+      - name: running Python Script
+        run: python python/cicd/sample.py
+        env:
+          USER_NAME: "ワークフローで設定したユーザー名"
+          PASSWORD: "ワークフローで設定したパスワード"
