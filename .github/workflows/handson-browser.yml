@@ -1,0 +1,9 @@
+name: HandsOn Browser # ①
+on: [push] # ②
+jobs: # ③
+  Explore-GitHub-Actions: # ④
+    runs-on: ubuntu-latest # ⑤
+    steps: # ⑥
+      - run: echo "Step1" # ⑦
+      - run: echo "Step2" # ⑧
+      - run: echo "branch → ${{ github.ref_name }}" # ⑨
