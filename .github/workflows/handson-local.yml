@@ -1,0 +1,9 @@
+name: HandsOn Local
+on: [merged]
+jobs:
+  Echo-Hello-World:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Hello"
+      - run: echo "World"
+      - run: echo "trigger → ${{ github.event_name }}"
